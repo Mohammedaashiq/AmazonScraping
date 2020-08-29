@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 
 
-URL='https://www.amazon.in/boAt-BassHeads-100-Headphones-Black/dp/B071Z8M4KX/ref=lp_22120007031_1_1?s=electronics&ie=UTF8&qid=1598556455&sr=1-1'
+URL='https://www.amazon.in/example:items'
 
 headers={"your User agent//type my user agent in chrome and copy paste the URL appearing in the first "}
 
