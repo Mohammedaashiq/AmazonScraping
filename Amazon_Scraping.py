@@ -5,8 +5,7 @@ import smtplib
 
 URL='https://www.amazon.in/boAt-BassHeads-100-Headphones-Black/dp/B071Z8M4KX/ref=lp_22120007031_1_1?s=electronics&ie=UTF8&qid=1598556455&sr=1-1'
 
-headers={"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'}
-
+headers={"your User agent//type my user agent in chrome and copy paste the URL appearing in the first "}
 
 def check_price():
     page = requests.get(URL,headers=headers)
@@ -30,14 +29,14 @@ def send_mail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('aashiqmo007@gmail.com','snjddjwszxatahwh')
+    server.login('your Gmail id','your app password')
 
     subject='Price Fell Down'
     body='check the amazon link https://www.amazon.in/boAt-BassHeads-100-Headphones-Black/dp/B071Z8M4KX/ref=lp_22120007031_1_1?s=electronics&ie=UTF8&qid=1598556455&sr=1-1'
     msg=f"Subject:{subject}\n\n{body}"
     server.sendmail(
-        'aashiqmo007@gmail.com',
-        'maashik155@gmail.com',
+        'To',
+        'From',
         msg
     )
     
